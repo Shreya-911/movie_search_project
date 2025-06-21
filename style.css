@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    background: #09001e;
+}
+
+nav {
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+    gap: 50rem;
+    font-size: 2rem;
+    background: #070212;
+}
+
+.other_nav {
+    display: flex;
+    gap: 5rem;
+    padding-top: 1rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo .first {
+    color: rgb(171, 220, 243);
+}
+
+.logo .second {
+    color: rgb(209, 82, 116);
+}
+
+.home #home_btn {
+    cursor: pointer;
+    all: unset;
+    color: antiquewhite;
+}
+
+.search #search_btn {
+    cursor: pointer;
+    all: unset;
+    color: antiquewhite;
+}
+
+.main {
+    text-align: center;
+    color: antiquewhite;
+    margin-top: 4rem;
+    font-size: 2rem;
+}
+
+.main .searchbar {
+    margin-top: 2rem;
+}
+
+.display {
+    display: none;
+}
+
+.home #home_btn:hover {
+    opacity: 0.7;
+}
+
+.search #search_btn:hover {
+    opacity: 0.7;
+}
+
+.main .searchbar #searchMovie{
+    width: 25rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background: rgb(171, 220, 243);
+}
+
+.main .searchbar #searchMoviebtn{
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background: rgb(209, 82, 116);
+    color: antiquewhite;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.main .searchbar #searchMovie::placeholder{
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.moviecard{
+    background: rgb(236, 150, 173, 0.3);
+    width: 80rem;
+    height: 30rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 7rem 2rem 7rem;
+    font-size: 1rem;
+}
+
+.moviecard .poster{
+    border-radius: 2rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.others{
+    margin: 2rem 1rem 1rem 1rem;
+}
+
+.others a{
+    color: lightblue;
+}
+
+.homepage{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2rem;
+}
+
+.remove{
+    display: none;
+}
+
+@keyframes slideUpFade {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.homepage {
+    animation: slideUpFade 0.6s ease-in-out;
+}
+
+@keyframes slideUpFadeCard {
+    from {
+        transform: translateX(-15px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.moviecard {
+    animation: slideUpFadeCard 0.6s ease-in-out;
+}
